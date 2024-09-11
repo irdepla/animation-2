@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  .wave-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .wave {
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: ripple 5s infinite ease-in-out;
+    opacity: 0;
+  }
+  
+  .wave:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+    border-color: #ff6f61;
+  }
+  
+  .wave:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    animation-delay: 1s;
+    border-color: #ffcc33;
+  }
+  
+  .wave:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    animation-delay: 2s;
+    border-color: #33ccff;
+  }
+  
+  .wave:nth-child(4) {
+    width: 250px;
+    height: 250px;
+    animation-delay: 3s;
+    border-color: #a569bd;
+  }
+  
+  .wave:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    animation-delay: 4s;
+    border-color: #e67e22;
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
